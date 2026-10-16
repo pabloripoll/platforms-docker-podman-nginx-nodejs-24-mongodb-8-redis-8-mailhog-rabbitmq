@@ -12,13 +12,13 @@
 
 ## <a id="features"></a>Features
 
-![Alpine Linux](https://img.shields.io/badge/Alpine_Linux-%230D597F.svg?style=for-the-badge&logo=alpine-linux&logoColor=white)
-![Debian](https://img.shields.io/badge/debian-red?style=for-the-badge&logo=debian&logoColor=orange&color=darkred)
-![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
-![PNPM](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)
-![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
+![Alpine Linux](https://shields.io/badge/Alpine_Linux-%230D597F.svg?style=for-the-badge&logo=alpine-linux&logoColor=white)
+![Debian](https://shields.io/badge/debian-red?style=for-the-badge&logo=debian&logoColor=orange&color=darkred)
+![Nginx](https://shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
+![NodeJS](https://shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![NPM](https://shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
+![PNPM](https://shields.io/badge/pnpm-%234a4a4a.svg?style=for-the-badge&logo=pnpm&logoColor=f69220)
+![Yarn](https://shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
 
 Content:
 - Linux Alpine 3.24
@@ -33,11 +33,11 @@ Sources:
 
 It can be installed the most known JS **back-end / API** frameworks:
 
-![Express](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
-![NestJS](https://img.shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
-![Fastify](https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
-![NextJS](https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![Express](https://shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
+![NestJS](https://shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white)
+![Fastify](https://shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white)
+![Prisma](https://shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white)
+![NextJS](https://shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 <br>
 
 Take into account that each framework will demand its specific configuration from inside container.
@@ -84,18 +84,18 @@ The service container can be easily manage by the `./docker/docker-compose.yml`.
 
 Require environment variables at `./docker/.env` *(all are customizable)*:
 ```bash
-COMPOSE_PROJECT_LEAD="myproj"                           # <- lead abbreviation or acronym as part of related containers naming rule -------------------------> #
-COMPOSE_PROJECT_CNET="mp-dev"                           # <- useful for networking to connect between containers --------------------------------------------> #
-COMPOSE_PROJECT_IMGK="alpine-3.24-nginx-nodejs-24"      # <- real main image keys to manage automations for sharing resources -------------------------------> #
-COMPOSE_PROJECT_NAME="mp-apirest-dev"                   # <- container name to build the service - it is important to set the environment in this variable --> #
-COMPOSE_PROJECT_HOST="127.0.0.1"                        # <- machine hostname referrer - not necessary for this project -------------------------------------> #
-COMPOSE_PROJECT_PORT=7501                               # <- local machine port opened for container service ------------------------------------------------> #
-COMPOSE_PROJECT_PATH="../../../api-rest"                # <- path where application is binded from container to local ---------------------------------------> #
-COMPOSE_PROJECT_CPUS="2.00"                             # <- container's maximum CPUs usage to apply by docker-compose - leave it empty for full usage ------> #
-COMPOSE_PROJECT_MEM="128M"                              # <- container's maximum CPUs usage to apply by docker-compose - leave it empty for full usage ------> #
-COMPOSE_PROJECT_SWAP="256M"                             # <- container's maximum RAM usage to apply by docker-compose ---------------------------------------> #
-COMPOSE_PROJECT_USER="osuser"                           # <- container's project directory user -------------------------------------------------------------> #
-COMPOSE_PROJECT_GROUP="osgroup"                         # <- container's project directory group ------------------------------------------------------------> #
+COMPOSE_LEAD=myproj                             # <- lead abbreviation or acronym as part of related containers naming rule -------------------------> #
+COMPOSE_CNET=mp-dev                             # <- useful for networking to connect between containers --------------------------------------------> #
+COMPOSE_IMGK=alpine-3.24-nginx-nodejs-24        # <- real main image keys to manage automations for sharing resources -------------------------------> #
+COMPOSE_NAME=mp-apirest-dev                     # <- container name to build the service - it is important to set the environment in this variable --> #
+COMPOSE_HOST=127.0.0.1                          # <- machine hostname referrer - not necessary for this project -------------------------------------> #
+COMPOSE_PORT=7501                               # <- local machine port opened for container service ------------------------------------------------> #
+COMPOSE_PATH="../../../api-rest"                # <- path where application is binded from container to local ---------------------------------------> #
+COMPOSE_CPUS=2.00                               # <- container's maximum CPUs usage to apply by docker-compose - leave it empty for full usage ------> #
+COMPOSE_MEMO=128M                               # <- container's maximum CPUs usage to apply by docker-compose - leave it empty for full usage ------> #
+COMPOSE_SWAP=256M                               # <- container's maximum RAM usage to apply by docker-compose ---------------------------------------> #
+COMPOSE_USER=osuser                             # <- container's project directory user -------------------------------------------------------------> #
+COMPOSE_GROUP=osgroup                           # <- container's project directory group ------------------------------------------------------------> #
 ```
 
 <font color="orange"><b>⚠️ IMPORTANT:</b></font>
